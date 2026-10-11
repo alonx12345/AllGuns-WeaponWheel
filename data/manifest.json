@@ -19,9 +19,9 @@
  },
  "masterp": {
   "stock_sha": "BBCCC138629855D1A6D4A71B9492F7DF03D3F21B2B8BCCB4D9B4BF4575BE0EC5",
-  "new_sha": "BB9038992A258E0C59817655D0029B06658133C7FAB519D986AC516C7D0B98A9",
+  "new_sha": "1480C031907288066670C52DDA6CE684D2413830D4ABF29728201BA337649B66",
   "stock_size": 13961361,
-  "new_size": 15371197,
+  "new_size": 15371211,
   "tab": 109,
   "nch": 60,
   "header_edits": 3,
@@ -29,7 +29,7 @@
  },
  "toc": {
   "master_old": "13961361 0 0 ..\\XGame\\CookedPCConsole_FR\\Master_P.xxx",
-  "master_new": "15371197 0 0 ..\\XGame\\CookedPCConsole_FR\\Master_P.xxx",
+  "master_new": "15371211 0 0 ..\\XGame\\CookedPCConsole_FR\\Master_P.xxx",
   "int_old": "3676 0 0 ..\\XGame\\Localization\\INT\\Arc_GFxSharedMovies.INT",
   "int_new": "3878 0 0 ..\\XGame\\Localization\\INT\\Arc_GFxSharedMovies.INT",
   "files": 12

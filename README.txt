@@ -34,3 +34,10 @@ How it works
 - A Steam update or "Verify integrity" restores the stock files; run Install.bat again afterwards.
 - Do not use with other mods that change the same files.
 - The "SELECT WEAPON" title text is added for English only.
+
+Test 2 - center icon correction
+- The selected gun icon now fits the enlarged center area and is centered.
+- If Test 1 is installed, close the game and run its Uninstall.bat first,
+  then run Install.bat from this package. Keep your original backup.
+- Installer scripts, executable patches and aiming behavior are unchanged.
+- Packaging/install checks passed; visual confirmation in game is still needed.

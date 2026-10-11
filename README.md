@@ -30,6 +30,25 @@ The installer checks the hashes of the game files it patches. If your files do n
 6. At **Enable hold-to-aim? [Y/n]**, choose **Y** for hold-to-aim or **N** to retain toggle aiming.
 7. Start the game.
 
+### Test 2: center icon correction
+
+Test 2 fits the selected gun icon to the enlarged center area and centers it
+within the wheel. Outer weapon slots, executable patches, and aiming behavior
+are unchanged.
+
+**Upgrading from Test 1:** close the game, run the Test 1 uninstaller, then
+install Test 2. Do not delete the original backup before uninstalling. The
+installer rejects the previous modified package rather than patching it as
+though it were stock.
+
+Geometry regression tests, installation, hold-to-aim switching in both
+directions, TOC sizes, and full uninstall restoration passed. The corrected
+mod was also installed locally and its file hashes verified. In-game visual
+confirmation of this correction is still pending.
+
+The original review package remains available under the `review-package`
+release; Test 2 is published separately under `test-2-center-icon-fix`.
+
 ### Manual game path
 
 Run from the extracted mod folder in Command Prompt:
@@ -66,7 +85,9 @@ Original files are backed up in `BI-AllGuns-WeaponWheel-backup` inside the game 
 
 ## Package contents and review notes
 
-The original package files are preserved without modification:
+The repository files match the Test 2 package. Compared with Test 1, only
+`data/masterp.bin`, `data/manifest.json`, and the package instructions changed;
+the installer scripts and other patch payloads are unchanged.
 
 | File | Purpose |
 | --- | --- |
@@ -77,16 +98,16 @@ The original package files are preserved without modification:
 | `data/exe.bin` | In-place executable patch records. |
 | `data/int.bin` | Copy/literal operations for the English localization file. |
 | `data/masterp.bin` | Package header edits and copy/literal operations for the weapon-wheel package changes. |
-| `README.txt` | Original package instructions. |
+| `README.txt` | Package instructions, including the Test 2 upgrade notes. |
 
 The installer applies patches to the user's own game files; the archive does not include the full game executable or full game packages. It reads the current-user Steam registry entry and Steam library configuration for game detection, creates backups, builds patched results in memory, and verifies expected result hashes before writing. Reviewers should examine both the installer and the binary payloads: readable installer code alone does not establish the safety of executable patches.
 
-The release ZIP is the exact archive supplied for publication:
+The Test 2 release ZIP:
 
 ```text
 Filename: AllGuns-WeaponWheel.zip
-Size: 58691 bytes
-SHA-256: 111E9BE39DC7A00F1C76E12581F5136E133942F56CF7095AD4115394A5089CFD
+Size: 57970 bytes
+SHA-256: 33EBDFD55FEE6A41C78ABE49AE41CE7761D5A6C8F50822B55F2D091D3ABF0008
 ```
 
 To verify the downloaded archive in PowerShell:
@@ -105,4 +126,4 @@ The mod author reports that this mod was built with GitHub Copilot in VS Code an
 - Small in-place machine-code patches implement the carry-limit change, scroll and E-key hooks, hold-to-aim input changes, and the owned-weapon pickup check, using unused space in the executable.
 - Changes were tested manually in the game by the mod author.
 
-Those in-game tests have not been independently repeated as part of publishing this repository. The installer and original patch files have not been changed for this publication.
+Those in-game tests have not been independently repeated as part of publishing this repository. Test 2 changes the wheel movie's center-icon fit and placement; it does not change the installer or executable patches.
