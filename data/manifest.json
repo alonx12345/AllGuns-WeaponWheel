@@ -1,0 +1,38 @@
+{
+ "exe": {
+  "stock_sha": "C20A42529C4181B1D10EED416D9847A823F9453DD267CA478EFB3A10014A0E77",
+  "new_sha": "069A8012CA6F43C3538DBDEDF0A2192093FD81F885D808E0EEEE211391F306E0",
+  "size": 18368840,
+  "edits": 17,
+  "bytes": 2306,
+  "hold_off": 18169224,
+  "hold_byte": 88,
+  "nohold_byte": 81,
+  "nohold_sha": "7B78DE15DF15D87B1EA1368F7679FD5A575926DE662177ABB3641011EF2896F5"
+ },
+ "int": {
+  "stock_sha": "E560DC54C34995D86535C5D9DEBAECFF167209B8D97548F0E97256F9DD1D4D52",
+  "new_sha": "BEC0064D443D3B790B792964FBDBD3B5DF1B86C4858E7BFE3AFAD97494E166A0",
+  "stock_size": 3676,
+  "new_size": 3878,
+  "path": "XGame\\Localization\\INT\\Arc_GFxSharedMovies.INT"
+ },
+ "masterp": {
+  "stock_sha": "BBCCC138629855D1A6D4A71B9492F7DF03D3F21B2B8BCCB4D9B4BF4575BE0EC5",
+  "new_sha": "BB9038992A258E0C59817655D0029B06658133C7FAB519D986AC516C7D0B98A9",
+  "stock_size": 13961361,
+  "new_size": 15371197,
+  "tab": 109,
+  "nch": 60,
+  "header_edits": 3,
+  "path": "XGame\\CookedPCConsole_FR\\Master_P.xxx"
+ },
+ "toc": {
+  "master_old": "13961361 0 0 ..\\XGame\\CookedPCConsole_FR\\Master_P.xxx",
+  "master_new": "15371197 0 0 ..\\XGame\\CookedPCConsole_FR\\Master_P.xxx",
+  "int_old": "3676 0 0 ..\\XGame\\Localization\\INT\\Arc_GFxSharedMovies.INT",
+  "int_new": "3878 0 0 ..\\XGame\\Localization\\INT\\Arc_GFxSharedMovies.INT",
+  "files": 12
+ },
+ "package": "BI-AllGuns-WeaponWheel"
+}
